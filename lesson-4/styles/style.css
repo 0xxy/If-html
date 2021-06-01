@@ -15,12 +15,14 @@
   margin-bottom: 20px;
   padding-top: 120px;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 40px;
   line-height: 47px;
 }
 
-.title-line{
+.title:after{
+  content: '';
+  display: block;
   width: 100px;
   height: 4px;
   background-color:#F5BD41;
