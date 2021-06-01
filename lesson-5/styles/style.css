@@ -20,7 +20,9 @@
    font-size: 40px;
  }
  
- .title-line{
+ .title:after{
+   content: '';
+   display: block;
    width: 100px;
    height: 4px;
    background-color:#F5BD41;
@@ -67,34 +69,30 @@
 
  .navigation{
   display: flex;
+  justify-content: space-between;
+ }
+
+ .footer li{
+  margin-bottom: 23px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
+ }
+
+ .footer a{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
+  text-decoration: none;
  }
 
  li{
   list-style-type: none;
-  margin-bottom: 23px; 
  }
 
- .footer-title{
-   color: #FFFFFF;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 20px;
+ .footer li:first-child{
+   font-weight: 500;
  }
-
- .footer-text{
-   color: #FFFFFF;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 20px;
- }
-
- .property-types{
-   padding-left: 223px;
- }
-
- .support{
-  padding-left: 282px;
-}
 
 .sign{
   color: #FFFFFF;
