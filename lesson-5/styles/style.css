@@ -8,7 +8,7 @@
 }
  
 .container{
- width: 1440px;
+ width: 1264px;
  padding: 120px 16px;
  margin: 0 auto;
 }
@@ -26,8 +26,7 @@
  width: 100px;
  height: 4px;
  background-color:#F5BD41;
- margin: 0 auto;
- margin-top: 19px;
+ margin: 19px auto 0;
 }
  
 .item-image{
@@ -60,16 +59,15 @@
 }
 
 .footer{
- margin-top: 100px;
- width: 1440px;
- height: 630px;
  background-color: #10367C;
- padding: 120px 104px;
 }
 
 .navigation{
  display: flex;
- justify-content: space-between;
+}
+
+.navigation ul{
+  width: 33.3333%;
 }
 
 .footer li{
