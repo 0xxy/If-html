@@ -1,15 +1,14 @@
 @import url(./fonts.css);
 
 *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
 .background{
-  padding: 51px 104px 0;
   margin: 0 auto;
   background-color: rgb(8, 6, 92);
   background-image: url(../images/background-1.png);
@@ -17,9 +16,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw ;
-  height: 100vh;
+  min-height: 100vh;
   object-fit: contain;
+}
 
+.container-for-header{
+  max-width: 1440px;
+  padding: 51px 104px 120px;
+  margin: 0 auto;
 }
 
 .header{
@@ -32,8 +36,8 @@
 }
 
 .header-navigation{
-  width: 343px;
-  height: 40px;
+  max-width: 343px;
+  max-height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -46,13 +50,54 @@
 }
 
 .stays{
-  border-bottom: 2px solid #F5BD41;
   margin-right: 24px;
- }
+}
 
- .night{
-   margin: 0 24px 0 48px;
- }
+.stays:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 12px auto 0;
+  transition: width .3s ease-in-out;
+}
+ 
+.stays:hover:after{
+  background-color:#F5BD41;
+  width: 50px;
+}
+
+.stays:active:after{
+  background-color:#F5BD41;
+  width: 50px;
+}
+
+.attractions:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 12px auto 0;
+  transition: width .3s ease-in-out;
+}
+ 
+.attractions:hover:after{
+  background-color:#F5BD41;
+  width: 106px;
+}
+
+.attractions:active:after{
+  background-color:#F5BD41;
+  width: 106px;
+}
+
+.night{
+  margin: 0 24px 0 48px;
+}
+
+.menu{
+  display: none;
+}
 
 h1{
   margin-top: 196px;
@@ -72,45 +117,44 @@ h1{
 
 .choise{
   margin-top: 24px;
-  width: 100%;
+  max-width: 1223px;
   height: 64px;
-  border-radius: 18px;
+  border-radius: 8px;
   background: #ffffff;
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .New-York{
-  border-radius: 14px;
+  border-radius: 8px;
   background: #ffffff;
-  padding: 22px;
+  padding: 22px 24px;
   border: none;
-  width: 37.5%;
+  width: 460px;
 }
 
 .Tue-15{
-  border-radius: 14px;
+  border-radius: 8px;
   background: #ffffff;
-  padding: 20px;
+  padding: 24px 23px;
   border: 2px solid #F5BD41;
-  width: 18%;
+  width: 259px;
 }
 
 .Adults{
-  border-radius: 14px;
+  border-radius: 8px;
   background: #ffffff;
-  padding: 22px;
+  padding: 24px 22px;
   border: none;
-  width: 25%;
+  width: 312px;
 }
 
 .choise button{
   color: #ffffff;
   background-color: #3077C6;
-  border-radius: 14px;
+  border-radius: 8px;
   border: none;
   padding: 25px;
-  width: 19.5%;
+  width: 192px;
 }
 
 .apps{
@@ -126,65 +170,124 @@ h1{
 /* What do we offer */
 
 .container{
- width: 1264px;
- padding: 120px 16px;
- margin: 0 auto;
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
 }
  
 .title{
- text-align: center;
- margin-bottom: 20px;
- font-style: normal;
- font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 40px;
 }
  
 .title:after{
- content: '';
- display: block;
- width: 100px;
- height: 4px;
- background-color:#F5BD41;
- margin: 19px auto 0;
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 19px auto 0;
+  transition: width .3s ease-in-out;
 }
  
+.title:hover:after{
+  background-color:#F5BD41;
+  width: 100px;
+}
+
 .item-image{
- width: 100px;
- height: 100pt;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: 100px;
+  height: 100pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
  
 .item{
- width: 25%;
- display: flex;
- flex-direction: column;
- align-items: center;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
  
 .with-image{
- display: flex;
- flex-wrap: wrap;
- padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
 }
  
 .item-text{
- padding-top: 33px;
- font-style: normal;
- font-weight: normal;
- font-size: 24px;
- line-height: 28px;
- text-align: center;
+  padding-top: 33px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Homes guests loves */
+.homes-guests-loves{
+  background-color: #EAF0F9;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 104px;
+}
+
+.hotels{
+  max-width: 1264px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.hotel-inform{
+  max-width: 296px;
+  max-height: 435px;
+}
+
+.img-hotels{
+  max-width: 296px;
+  max-height: 296px;
+}
+
+.name-hotels{
+  margin: 24px 0;
+  font-size: 24px;
+  color: #3077C6;
+}
+
+.city-of-hotels{
+  font-size: 24px;
+  line-height: 28px;
+  color: #BFBFBF;
+}
+
+img[src="./images/arrow.svg"]{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30%; 
+  right: -1%;
 }
 
 /* footer */
 
 .footer{
- background-color: #10367C;
+  background-color: #10367C;
+}
+
+.footer svg{
+  display: none;
 }
 
 .navigation{
- display: flex;
+  display: flex;
 }
 
 .navigation ul{
@@ -192,32 +295,226 @@ h1{
 }
 
 .footer li{
- margin-bottom: 23px;
- color: #FFFFFF;
- font-weight: 400;
- font-size: 20px; 
+  margin-bottom: 23px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
 }
 
-.footer a{
- color: #FFFFFF;
- font-weight: 400;
- font-size: 20px; 
- text-decoration: none;
+.a{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
+  text-decoration: none;
 }
 
 li{
- list-style-type: none;
+  list-style-type: none;
 }
 
-.footer li:first-child{
- font-weight: 500;
+.title-of-a{
+  font-size: 20px; 
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .sign{
- color: #FFFFFF;
- margin-top: 64px;
- font-style: normal;
- font-weight: normal;
- font-size: 14px;
- box-sizing: border-box;
+  color: #FFFFFF;
+  margin-top: 64px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 860px){
+  h1{
+    margin-top: 142px;
+    font-size: 40px;
+  }
+
+  .item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .container-for-header{
+    min-width: 360px;
+    padding: 12px 16px 40px;
+  }
+
+  .header{
+    font-size: 0px;
+  }
+
+  .header svg{
+    width: 122px;
+    height: 24px;
+  }
+
+  .stays{
+    display: none;
+  }
+
+  .attractions{
+    display: none;
+  }
+
+  .night img{
+    width: 16px;
+    height: 16px;
+  }
+
+  .night{
+    margin: 0 16px 0 0;
+  }
+
+  .account img{
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu{
+    display: flex;
+    width: 26px;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  h1{
+    margin-top: 88px;
+    font-size: 30px;
+  }
+
+  .destination{
+    display: none;
+  }
+  
+  .choise{
+    margin-top: 31px;
+    max-width: 328px;
+    min-height: 232px;
+    border-radius: 0px;
+    background: #F5BD41;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .choise button{
+    border-radius: 4px;
+    padding: 14px 124px;
+    width: 312px;
+    height: 48px;
+  }
+
+  .apps{
+    margin-top: 32px;
+  }
+
+  /* What do we offer */
+  .container{
+    padding: 24px 73px 40px;
+  }
+   
+  .title{
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+   
+  .title:after{
+    display: none;
+  }
+   
+  .item-image{
+    width: 70px;
+    height: 70pt;
+  }
+   
+  .item{
+    width: 100%;
+    padding-top: 32px;
+  }
+   
+  .with-image{
+    padding-top: 0px;
+  }
+   
+  .item-text{
+    padding-top: 16px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  /* Homes guests loves */
+h2{
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+.hotels{
+  max-width: 100%;
+}
+
+.hotel-inform{
+  max-width: 156px;
+  max-height: 193px;
+}
+
+.img-hotels{
+  width: 156px;
+  height: 155px;
+}
+
+.name-hotels{
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.city-of-hotels{
+  font-size: 12px;
+  line-height: 14px;
+}
+
+img[src="./images/arrow.svg"]{
+  width: 28px;
+  height: 28px;
+}
+
+  /* Footer */
+
+  .footer .container{
+    max-width: 360px;
+    max-height: 203px;
+    padding: 40px 48px;
+  }
+
+  .footer svg{
+    display: flex;
+    fill: #ffffff;
+    stroke: #FFFFFF;
+    width: 98px;
+    height: 19px;
+    margin: 0 auto 40px ;
+  }
+
+  .a{
+    display: none;
+  }
+
+  .title-of-a{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+  }
+
+  .sign{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
