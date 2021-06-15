@@ -1,0 +1,730 @@
+@import url(./fonts.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.background{
+  margin: 0 auto;
+  background-color: rgb(8, 6, 92);
+  background-image: url(../images/background-1.png);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw ;
+  min-height: 100vh;
+  object-fit: contain;
+}
+
+.container-for-header{
+  max-width: 1440px;
+  padding: 51px 104px 120px;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.header-navigation{
+  max-width: 343px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+.header a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.stays{
+  margin-right: 24px;
+}
+
+.stays:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 12px auto 0;
+  transition: width .3s ease-in-out;
+}
+ 
+.stays:hover:after{
+  background-color:#F5BD41;
+  width: 50px;
+}
+
+.stays:active:after{
+  background-color:#F5BD41;
+  width: 50px;
+}
+
+.attractions:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 12px auto 0;
+  transition: width .3s ease-in-out;
+}
+ 
+.attractions:hover:after{
+  background-color:#F5BD41;
+  width: 106px;
+}
+
+.attractions:active:after{
+  background-color:#F5BD41;
+  width: 106px;
+}
+
+.night{
+  margin: 0 24px 0 48px;
+}
+
+.menu{
+  display: none;
+}
+
+h1{
+  margin-top: 196px;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.destination{
+  width: 51%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-top: 100px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.choise{
+  margin-top: 24px;
+  max-width: 1223px;
+  height: 64px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+}
+
+.New-York{
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 22px 24px;
+  border: none;
+  width: 460px;
+}
+
+.Tue-15{
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 24px 23px;
+  border: 2px solid #F5BD41;
+  width: 259px;
+}
+
+.Adults{
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 24px 22px;
+  border: none;
+  width: 312px;
+}
+
+.choise button{
+  color: #ffffff;
+  background-color: #3077C6;
+  border-radius: 8px;
+  border: none;
+  padding: 25px;
+  width: 192px;
+}
+
+.apps{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.google-play{
+  margin-right: 16px;
+} 
+
+/* What do we offer */
+
+.container{
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
+}
+ 
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 40px;
+}
+ 
+.title:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 19px auto 0;
+  transition: width .3s ease-in-out;
+}
+ 
+.title:hover:after{
+  background-color:#F5BD41;
+  width: 100px;
+}
+
+.item-image{
+  width: 100px;
+  height: 100pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.item{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.with-image{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+ 
+.item-text{
+  padding-top: 33px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Homes guests loves */
+.homes-guests-loves{
+  background-color: #EAF0F9;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 104px;
+}
+
+.hotels{
+  max-width: 1264px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.hotel-inform{
+  max-width: 296px;
+  max-height: 435px;
+}
+
+.img-hotels{
+  max-width: 296px;
+  max-height: 296px;
+}
+
+.name-hotels{
+  margin: 24px 0;
+  font-size: 24px;
+  color: #3077C6;
+}
+
+.city-of-hotels{
+  font-size: 24px;
+  line-height: 28px;
+  color: #BFBFBF;
+}
+
+.hotels img[src="./images/arrow.svg"]{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30%; 
+  right: -1%;
+}
+
+/* The best destinations */
+form{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 84px;
+}
+
+.tabs{
+  padding: 17px 52px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: #F3F3F4;
+  color: #383838;
+}
+
+.tabs:hover{
+  background-color: #3077C6;
+  color: #FFFFFF;
+}
+
+.countries{
+  width: 100%;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-countries{
+  max-width: 296px;
+  max-height: 296px;
+  margin-bottom: 24px;
+}
+
+.img-text{
+  text-decoration: none;
+  color: #3077C6;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+img[src="./images/arrow11.svg"]{
+  max-width: 40px;
+  max-height: 40px;
+  margin-top: 48px;
+  position: absolute;
+  left: 49%;
+}
+
+/* Sign up */
+.container-for-sign-up{
+  max-width: 1264px;
+  padding: 89px 16px 0;
+  margin: 0 auto;
+}
+
+.sign-up{
+  max-width: 1232px;
+  max-height: 200px;
+  background-color: #EAF0F9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-and-form{
+  display: flex;
+  justify-content: start;
+}
+
+img[src="./images/user.svg"]{
+  max-height: 86px;
+  max-width: 86px;
+  margin: 57px 24px;
+}
+
+.form-for-sign-up{
+  margin: 51px 0 52px;
+  max-height: 97px;
+  max-width: 449px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-for-sign-up span{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.form-for-sign-up button{
+  padding: 12px 32px;
+  border-radius: 8px;
+  border-color: #3077C6;
+  color: #3077C6;
+  background-color: #FFFFFF;
+}
+
+img[src="./images/close 1.svg"]{
+  max-width: 26px;
+  max-height: 26px;
+  margin: 24px 24px 0 0;
+}
+
+/* guest-reviews */
+.guest-reviews{
+  margin-top: 84px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.review-img{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.guest-reviews img[src="./images/arrow.svg"]{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 25%; 
+  right: -1%;
+}
+
+.review-of-place{
+  max-width: 400px;
+  max-height: 760px;
+  background-color: #EAF0F9;
+}
+
+.main-of-review{
+  margin: 24px auto;
+  width: 352px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-and-city{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name-review-of-place{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077C6;
+}
+
+.city-review-of-place{
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077C6;
+}
+
+.rating-review-of-place{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 4px 11px;
+  border-radius: 8px;
+  background-color: #10367C;
+  align-self: flex-end;
+}
+
+.quantity-review-of-place{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+
+.reviewer{
+  width: 199px;
+  height: 64px;
+  margin: 0 0 17px 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.reviewer-name{
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.review-user-name{
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+.review-user-country{
+  font-size: 18px;
+  line-height: 21px;
+  color: #BFBFBF;
+}
+
+.review-of-place p{
+  margin: 0 24px 66px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+/* footer */
+.footer{
+  background-color: #10367C;
+}
+
+.footer svg{
+  display: none;
+}
+
+.navigation{
+  display: flex;
+}
+
+.navigation ul{
+  width: 33.3333%;
+}
+
+.footer li{
+  margin-bottom: 23px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
+}
+
+.a{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px; 
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.title-of-a{
+  font-size: 20px; 
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.sign{
+  color: #FFFFFF;
+  margin-top: 64px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 860px){
+  h1{
+    margin-top: 142px;
+    font-size: 40px;
+  }
+
+  .item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .container-for-header{
+    min-width: 360px;
+    padding: 12px 16px 40px;
+  }
+
+  .header{
+    font-size: 0px;
+  }
+
+  .header svg{
+    width: 122px;
+    height: 24px;
+  }
+
+  .stays{
+    display: none;
+  }
+
+  .attractions{
+    display: none;
+  }
+
+  .night img{
+    width: 16px;
+    height: 16px;
+  }
+
+  .night{
+    margin: 0 16px 0 0;
+  }
+
+  .account img{
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu{
+    display: flex;
+    width: 26px;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  h1{
+    margin-top: 88px;
+    font-size: 30px;
+  }
+
+  .destination{
+    display: none;
+  }
+  
+  .choise{
+    margin-top: 31px;
+    max-width: 328px;
+    min-height: 232px;
+    border-radius: 0px;
+    background: #F5BD41;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .choise button{
+    border-radius: 4px;
+    padding: 14px 124px;
+    width: 312px;
+    height: 48px;
+  }
+
+  .apps{
+    margin-top: 32px;
+  }
+
+  /* What do we offer */
+  .container{
+    padding: 24px 73px 40px;
+  }
+   
+  .title{
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+   
+  .title:after{
+    display: none;
+  }
+   
+  .item-image{
+    width: 70px;
+    height: 70pt;
+  }
+   
+  .item{
+    width: 100%;
+    padding-top: 32px;
+  }
+   
+  .with-image{
+    padding-top: 0px;
+  }
+   
+  .item-text{
+    padding-top: 16px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  /* Homes guests loves */
+h2{
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+.hotels{
+  max-width: 100%;
+}
+
+.hotel-inform{
+  max-width: 156px;
+  max-height: 193px;
+}
+
+.img-hotels{
+  width: 156px;
+  height: 155px;
+}
+
+.name-hotels{
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.city-of-hotels{
+  font-size: 12px;
+  line-height: 14px;
+}
+
+img[src="./images/arrow.svg"]{
+  width: 28px;
+  height: 28px;
+}
+
+  /* Footer */
+
+  .footer .container{
+    max-width: 360px;
+    max-height: 203px;
+    padding: 40px 48px;
+  }
+
+  .footer svg{
+    display: flex;
+    fill: #ffffff;
+    stroke: #FFFFFF;
+    width: 98px;
+    height: 19px;
+    margin: 0 auto 40px ;
+  }
+
+  .a{
+    display: none;
+  }
+
+  .title-of-a{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+  }
+
+  .sign{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
