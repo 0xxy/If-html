@@ -553,6 +553,10 @@ li{
 }
 
 @media only screen and (max-width: 480px){
+  .disappear-adaptive{
+    display: none;
+  }
+
   .container-for-header{
     min-width: 360px;
     padding: 12px 16px 40px;
@@ -661,41 +665,40 @@ li{
   }
   
   /* Homes guests loves */
-h2{
-  font-size: 28px;
-  margin-bottom: 32px;
-}
-.hotels{
-  max-width: 100%;
-}
+  h2{
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  .hotels{
+    max-width: 100%;
+  }
 
-.hotel-inform{
-  max-width: 156px;
-  max-height: 193px;
-}
+  .hotel-inform{
+    max-width: 156px;
+    max-height: 193px;
+  }
 
-.img-hotels{
-  width: 156px;
-  height: 155px;
-}
+  .img-hotels{
+    width: 156px;
+    height: 155px;
+  }
 
-.name-hotels{
-  margin: 8px 0;
-  font-size: 12px;
-}
+  .name-hotels{
+    margin: 8px 0;
+    font-size: 12px;
+  }
 
-.city-of-hotels{
-  font-size: 12px;
-  line-height: 14px;
-}
+  .city-of-hotels{
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-img[src="./images/arrow.svg"]{
-  width: 28px;
-  height: 28px;
-}
+  img[src="./images/arrow.svg"]{
+    width: 28px;
+    height: 28px;
+  }
 
   /* Footer */
-
   .footer .container{
     max-width: 360px;
     max-height: 203px;
