@@ -615,25 +615,25 @@ li{
   font-size: 14px;
   box-sizing: border-box;
 }
-
-@media only screen and (max-width: 480px){
+ 
+@media only screen and (max-width: 1024px){
   .contain{
-    padding: 40px 16px;
+    padding: 50px 24px;
   }
   
   .header .contain{
-    padding-top: 12px;
+    padding-top: 24px;
   }
   
   .logo{
-    max-width: 122px;
-    max-height: 24px;
+    max-width: 162px;
+    max-height: 32px;
     margin-left: 0;
   }
   
   .nav{
-    max-width: 96px;
-    max-height: 24px;
+    max-width: 114px;
+    max-height: 32px;
   }
   
   .stays{
@@ -645,26 +645,26 @@ li{
   }
   
   .night{
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
   
   .nav__acount{
-    margin-left: 16px;
-    width: 24px;
-    height: 24px;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
   }
 
   .menu{
     display: flex;
-    margin-left: 16px;
+    margin-left: 20px;
   }
   
   .search-section__title{
-    width: 328px;
-    font-size: 30px;
+    width: 430px;
+    font-size: 40px;
     line-height: 35px;
-    margin: 40px 0 31px;
+    margin: 120px 0 80px;
   }
   
   .search-form{
@@ -796,6 +796,330 @@ li{
   } 
 
   .apps{
+    margin-top: 60px;
+  }
+  
+  .contain__title{
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 30px;
+  }
+   
+  .contain__title:after{
+    display: none;
+  }
+  
+  .blocks{
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  
+  .item{
+    width: 50%;
+    margin-top: 56px;
+  }
+  
+  .item__image{
+    max-width: 80px;
+    max-height: 80px;
+  }
+   
+  .item__text{
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  } 
+  
+  .hotels{
+    width: 100%;
+    margin-top: 48px;
+    justify-content: center;
+  }
+
+  .disappear-adaptive--tablet{
+    display: none;
+  }
+  
+  .hotels__inform{
+    width: 170px;
+  }
+  
+  .hotels__inform-img{
+    max-width: 170px;
+    max-height: 170px;
+  }
+  
+  .hotels__inform:nth-child(2){
+    margin:0 24px;
+  }
+
+  .hotels__inform-name{
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .hotels__inform-city{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .hotels__arrow{
+    width: 32px;
+    height: 32px;
+  }
+
+  .destination-area{
+    justify-content: center;
+    margin-top: 48px;
+    background-color: unset;
+    border-radius: unset;
+    max-width: 100%;
+  }
+
+  .destination-area__tabs{
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+    
+  .destination-area__tabs:nth-child(2){
+    margin: 0 48px;
+  }
+  
+  .destination-area__tabs-places{
+    display: flex;
+  }
+  
+  .destination-area__tabs--desktop{
+    display: none;
+  }
+
+  .countries{
+    margin-top: 36px;
+    justify-content: center;
+  }
+  
+  .countries-div:nth-child(2){
+    margin: 0 24px;
+  }
+
+  .countries__img{
+    max-width: 170px;
+    max-height: 170px;
+    margin-bottom: 12px;
+  }
+  
+  .countries__img-text{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .countriers__arrow-down{
+    display: none;
+  }
+
+  .countriers__arrow-right{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 18%;
+    top: 230%;
+  }
+
+  .container-for-sign-up{
+    display: none;
+  }
+
+  .review{
+    background-color: #EAF0F9;
+  }
+
+  .guest-reviews{
+    margin-top: 48px;
+    justify-content: center;
+  }
+  
+  .review__mob-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    color: #383838;
+  }
+
+  .review-of-place__img{
+    max-width: 292px;
+    max-height: 290px;
+  }
+  
+  .review-of-place__arrow-right{
+    display: none;
+  }
+  
+  .review-of-place{
+    max-width: 292px;
+    max-height: unset;
+  }
+  .review-of-place:nth-child(2){
+    margin-left: 24px;
+  }
+
+  .main-of-review{
+    margin: 15px auto;
+    width: 282px;
+    height: 44px;
+  }
+  
+  .name-review-of-place{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .city-review-of-place{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .rating-review-of-place{
+    font-size: 15px;
+    line-height: 20px;
+    padding: 3px 9px;
+  }
+  
+  .quantity-review-of-place{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .reviewer{
+    width: 170px;
+    height: 53px;
+    margin: 0 0 17px;
+  }
+  
+  .reviewer-name{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .review-user-name{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .review-user-country{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .review-of-place p{
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .review-of-place__balls{
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+  }
+
+  .balls{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  .balls:active{
+    background-color: #333333;
+  }
+
+  .footer .container{
+    max-width: 360px;
+    max-height: 203px;
+    padding: 40px 48px;
+  }
+
+  .footer svg{
+    display: flex;
+    fill: #ffffff;
+    stroke: #FFFFFF;
+    width: 98px;
+    height: 19px;
+    margin: 0 auto 40px ;
+  }
+
+  .a{
+    display: none;
+  }
+
+  .title-of-a{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+  }
+
+  .sign{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .contain{
+    padding: 40px 16px;
+  }
+  
+  .header .contain{
+    padding-top: 12px;
+  }
+  
+  .logo{
+    max-width: 122px;
+    max-height: 24px;
+    margin-left: 0;
+  }
+  
+  .nav{
+    max-width: 96px;
+    max-height: 24px;
+  }
+  
+  .night{
+    width: 16px;
+    height: 16px;
+  }
+  
+  .nav__acount{
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu{
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .search-section__title{
+    width: 328px;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 40px 0 31px;
+  }
+  
+  .apps{
     margin-top: 32px;
   }
   
@@ -803,10 +1127,6 @@ li{
     margin-bottom: 0;
     font-size: 28px;
     line-height: 33px;
-  }
-   
-  .contain__title:after{
-    display: none;
   }
   
   .blocks{
@@ -888,10 +1208,6 @@ li{
   .destination-area__tabs-places{
     display: flex;
   }
-  
-  .destination-area__tabs--desktop{
-    display: none;
-  }
 
   .countries{
     margin-top: 24px;
@@ -926,10 +1242,6 @@ li{
     top: 335%;
   }
 
-  .container-for-sign-up{
-    display: none;
-  }
-
   .review{
     background-color: #EAF0F9;
   }
@@ -953,69 +1265,10 @@ li{
     max-height: 325px;
   }
   
-  .review-of-place__arrow-right{
-    display: none;
-  }
-  
-  .review-of-place{
-    max-width: 327px;
-    max-height: 627px;
-  }
-  
   .main-of-review{
     margin: 12px auto;
     width: 325px;
     height: 44px;
-  }
-  
-  .name-review-of-place{
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .city-review-of-place{
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .rating-review-of-place{
-    font-size: 15px;
-    line-height: 20px;
-    padding: 3px 9px;
-  }
-  
-  .quantity-review-of-place{
-    font-size: 12px;
-    line-height: 14px;
-  }
-  
-  .reviewer{
-    width: 170px;
-    height: 53px;
-    margin: 0 0 17px;
-  }
-  
-  .reviewer-name{
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .review-user-name{
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .review-user-country{
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .review-of-place p{
-    margin: 0;
-    font-size: 15px;
-    line-height: 18px;
   }
   
   .review-of-place__balls{
@@ -1032,41 +1285,5 @@ li{
     margin-left: 8px;
   }
 
-  .balls:active{
-    background-color: #333333;
-  }
-
-  .footer .container{
-    max-width: 360px;
-    max-height: 203px;
-    padding: 40px 48px;
-  }
-
-  .footer svg{
-    display: flex;
-    fill: #ffffff;
-    stroke: #FFFFFF;
-    width: 98px;
-    height: 19px;
-    margin: 0 auto 40px ;
-  }
-
-  .a{
-    display: none;
-  }
-
-  .title-of-a{
-    font-size: 15px;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: underline;
-  }
-
-  .sign{
-    margin-top: 32px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-}
+} 
 
