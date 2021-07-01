@@ -301,9 +301,9 @@ input{
 }
 
 .hotels__inform-img{
-  max-width: 296px;
-  max-height: 296px;
-}
+  max-width: 100%;
+  max-height: 100%;
+} 
 
 .hotels__inform:last-child{
   position: relative;
@@ -372,9 +372,13 @@ input{
   position: relative;
 }
 
+.countries-div{
+  width: 25%;
+}
+
 .countries__img{
-  max-width: 296px;
-  max-height: 296px;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 24px;
 }
 
@@ -464,9 +468,13 @@ input{
   display: none;
 }
 
+.review-of-place{
+  max-width: 32.5%;
+  background-color: #EAF0F9;
+}
+
 .review-of-place__img{
-  max-width: 400px;
-  max-height: 400px;
+  width: 100%;
 }
 
 .review-of-place__arrow-right{
@@ -477,16 +485,11 @@ input{
   right: -1%;
 }
 
-.review-of-place{
-  max-width: 400px;
-  max-height: 760px;
-  background-color: #EAF0F9;
-}
-
 .main-of-review{
   margin: 24px auto;
-  width: 352px;
-  height: 58px;
+  padding: 0 24px;
+  max-width: 100%;
+  max-height: 58px;
   display: flex;
   justify-content: space-between;
 }
@@ -616,7 +619,7 @@ li{
   box-sizing: border-box;
 }
  
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1032px){
   .contain{
     padding: 50px 24px;
   }
@@ -842,14 +845,9 @@ li{
   }
   
   .hotels__inform{
-    width: 170px;
+    width: 33.333333%;
   }
-  
-  .hotels__inform-img{
-    max-width: 170px;
-    max-height: 170px;
-  }
-  
+    
   .hotels__inform:nth-child(2){
     margin:0 24px;
   }
@@ -868,6 +866,8 @@ li{
   .hotels__arrow{
     width: 32px;
     height: 32px;
+    top: 34%; 
+    right: -2%;
   }
 
   .destination-area{
@@ -901,14 +901,16 @@ li{
     margin-top: 36px;
     justify-content: center;
   }
+
+  .countries-div{
+    width: 33%;
+  }
   
   .countries-div:nth-child(2){
     margin: 0 24px;
   }
 
   .countries__img{
-    max-width: 170px;
-    max-height: 170px;
     margin-bottom: 12px;
   }
   
@@ -926,8 +928,8 @@ li{
     width: 32px;
     height: 32px;
     position: absolute;
-    right: 18%;
-    top: 230%;
+    right: 1%;
+    top: 354%;
   }
 
   .container-for-sign-up{
@@ -951,27 +953,25 @@ li{
     line-height: 30px;
     color: #383838;
   }
-
-  .review-of-place__img{
-    max-width: 292px;
-    max-height: 290px;
-  }
   
   .review-of-place__arrow-right{
-    display: none;
+    width: 32px;
+    height: 32px;
+    top: 26%;
+    right: -2%;
   }
   
   .review-of-place{
-    max-width: 292px;
-    max-height: unset;
+    max-width: 48%;
   }
+ 
   .review-of-place:nth-child(2){
     margin-left: 24px;
-  }
+  } 
 
   .main-of-review{
-    margin: 15px auto;
-    width: 282px;
+    margin: 15px 0;
+    padding: 0 16px;
     height: 44px;
   }
   
@@ -1160,18 +1160,17 @@ li{
   .disappear-adaptive{
     display: none;
   }
-  
+
   .hotels__inform{
-    width: unset;
-  }
-  
-  .hotels__inform-img{
-    max-width: 156px;
-    max-height: 155px;
+    width: 50%;
   }
   
   .hotels__inform:first-child{
     margin-right: 16px;
+  }
+
+  .hotels__inform:nth-child(2){
+    margin: unset;
   }
 
   .hotels__inform-name{
@@ -1186,8 +1185,9 @@ li{
   }
   
   .hotels__arrow{
-    width: 28px;
-    height: 28px;
+    max-width: 28px;
+    max-height: 28px;
+    right: -4%;
   }
 
   .destination-area{
@@ -1214,13 +1214,19 @@ li{
     justify-content: center;
   }
   
-  .countries-first{
-    margin-right: 16px
+  .countries-div{
+    width: 50%;
   }
 
+  .countries-div:nth-child(2){
+    margin: unset;
+  }
+
+  .countries-first{
+    margin-right: 16px
+  } 
+
   .countries__img{
-    max-width: 156px;
-    max-height: 156px;
     margin-bottom: 8px;
   }
   
@@ -1237,9 +1243,8 @@ li{
     display: inline-block;
     width: 28px;
     height: 28px;
-    position: absolute;
-    right: 2%;
-    top: 335%;
+    right: 0%;
+    top: 320%;
   }
 
   .review{
@@ -1259,16 +1264,20 @@ li{
     line-height: 33px;
     color: #383838;
   }
-
-  .review-of-place__img{
-    max-width: 327px;
-    max-height: 325px;
-  }
   
   .main-of-review{
     margin: 12px auto;
-    width: 325px;
+    padding: 0;
+    width: 100%;
     height: 44px;
+  }
+
+  .review-of-place{
+    max-width: 100%;
+  }
+
+  .review-of-place__arrow-right{
+    display: none;
   }
   
   .review-of-place__balls{
