@@ -326,8 +326,8 @@ input{
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 30%; 
-  right: -1%;
+  top: calc(30%); 
+  right: calc(-1%);
 }
 
 .destination-area{
@@ -482,7 +482,8 @@ input{
   height: 40px;
   position: absolute;
   top: 25%; 
-  right: -1%;
+  right: -2%;
+  transform: translate(-25%, -2%);
 }
 
 .main-of-review{
@@ -929,7 +930,8 @@ li{
     height: 32px;
     position: absolute;
     right: 1%;
-    top: 354%;
+    top: 350%;
+    transform: translate(-1%, -350%);
   }
 
   .container-for-sign-up{
@@ -955,11 +957,10 @@ li{
   }
   
   .review-of-place__arrow-right{
-    width: 32px;
-    height: 32px;
     top: 26%;
-    right: -2%;
-  }
+    right: -1%;
+    transform: translate(26%, -1%);
+  } 
   
   .review-of-place{
     max-width: 48%;
